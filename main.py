@@ -50,6 +50,8 @@ def read_png_size(data):
 
 
 def main():
+    # The hero asset is a JPEG-encoded photograph; the header sniffers
+    # below accept either a whole PNG or a whole JPEG byte string.
     with open(ASSET, "rb") as f:
         data = f.read()
 
